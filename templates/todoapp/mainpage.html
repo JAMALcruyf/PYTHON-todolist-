@@ -1,0 +1,29 @@
+{% extends "todoapp/base.html" %}
+
+{% load static %}
+
+{% block title %}
+ Main
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="Home">
+
+  <a class="brand-logo" href="{% url 'main' %}">
+  <img class="logo" src="{% static 'Logo.svg' %}">
+  <div class="brand-logo-name"><strong> ToDo </strong> </div>
+  </a>
+
+
+  <div class="call-to-action">
+      <h1 class="title"> what to do  !</h1>
+      <h3 class="subtitle"> <strong>ToDo</strong> IS TO ACHIEVE </h3>
+
+      <a href="{% url 'login' %}" class="btn">Let’s get started</a>
+  </div>
+
+</div>
+
+{% endblock content %}
